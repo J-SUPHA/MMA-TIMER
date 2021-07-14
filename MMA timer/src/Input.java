@@ -1,19 +1,19 @@
 import javax.swing.*;  
 import java.awt.event.*;  
 public class Input implements ActionListener{
-	JLabel l1,l2,l3,l4,l5,l6;
+    JLabel l1,l2,l3,l4,l5,l6;
     JTextField tf1,tf2,tf3,tf4,tf5;  
     JButton b1,b2;  
-    JFrame f= new JFrame("Welcome to the BOXING/MMA Timer");
-    public int [] store = new int [5];
+    JFrame f= new JFrame("Welcome to the BOXING/MMA Timer"); //frame title 
+    public int [] store = new int [5]; //store of input to be put in timer method 
     
     Input(){  
-        JPanel p = new JPanel();
+        JPanel p = new JPanel(); //constructing panels - having issue with 
         f.setSize(500, 700);
         p.setSize(499, 699);
         p.setLayout(null);
         
-        l2 = new JLabel("Enter the number of minutes of your live round");
+        l2 = new JLabel("Enter the number of minutes of your live round"); //constructing labels 
         l2.setBounds(250,10,350,50);
         p.add(l2);
         tf1=new JTextField();  
@@ -52,14 +52,14 @@ public class Input implements ActionListener{
         f.setVisible(true);  
     }         
     public void actionPerformed(ActionEvent e) {  
-        String s1=tf1.getText();  
+        String s1=tf1.getText();  //extracting data from input table
         String s2=tf2.getText(); 
         String s3=tf3.getText();
         String s4=tf4.getText();
         String s5=tf5.getText();
       
       
-        int a=Integer.parseInt(s1);  
+        int a=Integer.parseInt(s1);  //converting ata from string to int 
         int b=Integer.parseInt(s2);  
         int c=Integer.parseInt(s3);
         int d=Integer.parseInt(s4);
