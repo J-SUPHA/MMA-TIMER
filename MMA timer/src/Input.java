@@ -8,12 +8,12 @@ public class Input implements ActionListener{
     public int [] store = new int [5]; //store of input to be put in timer method 
     
     Input(){  
-        JPanel p = new JPanel(); //constructing panels - having issue with 
-        f.setSize(500, 700);
-        p.setSize(499, 699);
+        JPanel p = new JPanel();
+        f.setSize(900, 700);
+        p.setSize(899, 699);
         p.setLayout(null);
         
-        l2 = new JLabel("Enter the number of minutes of your live round"); //constructing labels 
+        l2 = new JLabel("Enter the number of minutes of your live round");
         l2.setBounds(250,10,350,50);
         p.add(l2);
         tf1=new JTextField();  
@@ -48,8 +48,7 @@ public class Input implements ActionListener{
         b1.addActionListener(this);
         p.add(b1);
         f.add(p);
-        f.pack();
-        f.setVisible(true);  
+        f.setVisible(true);
     }         
     public void actionPerformed(ActionEvent e) {  
         String s1=tf1.getText();  //extracting data from input table
